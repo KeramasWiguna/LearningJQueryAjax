@@ -97,6 +97,7 @@ $(function (){
 		$isi.val($li.find('span.isi'+ $id).html());
 		$tambah.addClass("edit");
 		$simpan.removeClass("edit");
+		$('.remove').addClass('edit');
 
 		$simpan.on('click', function(){
 
@@ -119,6 +120,7 @@ $(function (){
 						$judul.val("");
 						$isi.val("");
 						$id = "";
+						$('.remove').removeClass('edit');
 						getPesan($pesan,$cont,"Data Berhasil Di Perbarui");
 					}
 				});
