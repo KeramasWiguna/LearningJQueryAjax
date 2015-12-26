@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Judul:</strong>
+  <%= @beritum.judul %>
+</p>
+
+<p>
+  <strong>Isi:</strong>
+  <%= @beritum.isi %>
+</p>
+
+<%= link_to 'Edit', edit_beritum_path(@beritum) %> |
+<%= link_to 'Back', berita_path %>

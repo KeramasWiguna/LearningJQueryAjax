@@ -1,0 +1,2 @@
+module BeritaHelper
+end

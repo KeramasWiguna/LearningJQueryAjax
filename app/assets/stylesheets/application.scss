@@ -1,0 +1,15 @@
+@import "materialize";
+
+body{
+	background-color:#e57373; 
+	
+	.edit{
+		display:none;
+	}
+	.center{
+		text-align:center;
+	}
+	.fixed{
+		position: fixed;
+	}
+}

@@ -1,0 +1,25 @@
+<%= form_for(@beritum) do |f| %>
+  <% if @beritum.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@beritum.errors.count, "error") %> prohibited this beritum from being saved:</h2>
+
+      <ul>
+      <% @beritum.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :judul %><br>
+    <%= f.text_field :judul %>
+  </div>
+  <div class="field">
+    <%= f.label :isi %><br>
+    <%= f.text_area :isi %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>
